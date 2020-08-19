@@ -17,6 +17,10 @@ app.get('', (req, res) => {
     res.render('index', {data});
 })
 
-app.listen(3000, () => {
+
+const port = process.env.PORT || 3000;
+//process... : chinh la port khi chay tren server heroku
+//truong hop minh chay localhost thi se la 3000
+app.listen(port, () => {
     console.log('server is up')
 });
