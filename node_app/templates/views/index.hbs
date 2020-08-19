@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+
+     </head>
+     <body>
+         {{>header}}
+         <button onclick=clickme()>click me</button>
+         <br>
+         author: {{data.name}} <br>
+         age: {{data.age}} <br>
+         job: {{data.job}}
+     </body>
+     <script>
+         after = () => {
+             console.log("after helloworld")
+         }
+         clickme = () => {
+             alert("helloworld")
+             after();
+         }
+     </script>
+ </html>
